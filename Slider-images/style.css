@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+.slide-container{
+    position: relative;
+    
+}
+.slide img{
+    
+    position: relative;
+   left: 50%;
+}
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top:45%;
+    color: black;
+    background-color: azure;
+    padding: 8px 19px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 25px;
+}
+.next{
+    right: 10px;
+}
+.prev{
+    left: 10px;
+}
+.caption{
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 15px 0px;
+}
+.slide{
+    display: none;
+    
+}

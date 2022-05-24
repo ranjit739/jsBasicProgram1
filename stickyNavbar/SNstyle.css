@@ -1,0 +1,25 @@
+img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 500px;
+}
+#menu-bar{
+    text-align: center;
+    background-color: aqua;
+}
+
+#menu-bar li{
+    display: inline-block;
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#container{
+text-align: center;
+}
+.stiky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

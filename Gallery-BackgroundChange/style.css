@@ -1,0 +1,39 @@
+ body{
+     padding: 50px 50px;
+ }
+ img{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    left: 40%;
+}
+p{
+    justify-content: center;
+}
+.btn{
+    
+    border-radius: 50%;
+   height: 20px;
+   width: 20px;
+display: inline-block;
+cursor: pointer;
+border: solid 2px black;
+}
+#red{
+background-color: red;
+}
+#blue{
+background-color: blue;
+
+}
+#pink{
+background-color: pink;
+}
+#green{
+background-color: green;
+}
+#black{
+background-color: black;
+    }

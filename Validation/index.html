@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="form-container">
+        <h2>Login</h2>
+        <form action="" onsubmit= "return validateFrom()">
+       <input type="text" placeholder="user name" id="userName"><br>
+       <p id="userError" class="error"></p>
+       <input type="password" placeholder="password" id="password"><br>
+       <p id="passError" class="error"></p>
+       <input type="submit">
+
+        </form>
+
+    </div>
+    <script>
+        let userName=document.getElementById("userName");
+        let password=document.getElementById("password");
+        let flag=1;
+        function validateFrom(){
+            if(userName.value == ""){
+            document.getElementById("userError").innerHTML="user is empty";  
+            flag=0;
+            }
+             else if(userName.value.length <=3){
+                document.getElementById("userError").innerHTML="user Name require min 3 char";
+                flag=0;
+            }
+            else{
+                document.getElementById("userError").innerHTML="";
+                flag=1;
+            }
+            if(password.value==""){
+                document.getElementById("passError").innerHTML="password is empty";
+                flag=0;
+
+            }
+            else{
+                document.getElementById("passError").innerHTML="";
+                flag=1;
+            }
+            if(flag){
+                return true;
+            }
+            else{
+                 return false;
+                }
+           
+        }
+    </script>
+</body>
+</html>

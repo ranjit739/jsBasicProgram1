@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Ammount</label><br>
+    <input type="number" id="amount"><br><br>
+    <label>Tip Percent</label><br>
+    <input type="number" id="pert"><br><br>
+    <label>tip amount</label><br>
+    <input type="number" id="tip_amount" disabled><br><br>
+    <label>Total Bill</label><br>
+    <input type="number" id="total_bill" disabled><br>
+    <input type="button" onclick="tipcalcy()" value="calculate">
+
+    
+</body>
+<script >
+    const tipcalcy =()=>{
+        let amount=document.getElementById("amount").value;
+        let perc=document.getElementById("pert").value;
+        let tip_amount=amount*(perc/100);
+        document.getElementById("tip_amount").value=tip_amount;
+        let total_bill=tip_amount+Number(amount);
+        document.getElementById("total_bill").value=total_bill;
+
+    }
+</script>
+</html>
